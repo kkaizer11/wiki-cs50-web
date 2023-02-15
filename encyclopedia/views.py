@@ -25,3 +25,4 @@ def search(request):
     for result in pages
     if query.upper() in result.upper()]
     return render(request, "encyclopedia/search.html", {"query": query, "matches": matches})
+    
